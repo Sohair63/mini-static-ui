@@ -52,5 +52,7 @@ $on-large:         $on-laptop !default;
 @import
   "minima/base",
   "minima/layout",
+  "minima/posts",
+  "minima/feeds",
   "minima/syntax-highlighting"
 ;
