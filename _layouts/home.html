@@ -33,8 +33,18 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
-
-    <p class="feed-subscribe"><svg class="svg-icon orange"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p>
   {%- endif -%}
 
+  {%- if site.twitter_ref_src and site.twitter_username and site.show_twitter_feed -%}
+    <h2 class='post-list-heading'>Twitter Feeds</h2>
+
+    <a data-chrome="{{ site.twitter_feed_setting | default: 'noheader, noscrollbar, nofooter, noborders' }}" data-tweet-limit="{{ site.tweets_limit | default: 3 }}" data-dnt="true"  class="twitter-timeline" href="https://twitter.com/{{ site.twitter_ref_src }}">
+    </a>
+
+    <center>
+      <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}">Load more tweets</a>
+    </center>
+
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  {%- endif -%}
 </div>
