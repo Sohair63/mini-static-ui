@@ -294,6 +294,33 @@
   }
 }
 
+.twitter-timeline-show-more-button {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 10px 0;
+  margin: 0 0 20px 0;
+  width: 155px;
+  font-size: 14px;
+  color: #2b7bb9;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #55acee;
+  border-radius: 100px;
+  outline: 0;
+  cursor: pointer;
+}
+
+.twitter-timeline-load-more-prompt {
+  border-top: 1px solid #55acee;
+}
+
+.twitter-timeline-show-more-button:focus, .twitter-timeline-show-more-button:hover {
+  background-color: #55acee;
+  color: #fff;
+  text-decoration: none;
+}
+
 
 /**
  * Grid helpers

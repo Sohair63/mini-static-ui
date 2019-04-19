@@ -38,12 +38,14 @@ layout: default
   {%- if site.twitter_ref_src and site.twitter_username and site.show_twitter_feed -%}
     <h2 class='post-list-heading'>Twitter Feeds</h2>
 
-    <a data-chrome="{{ site.twitter_feed_setting | default: 'noheader, noscrollbar, nofooter, noborders' }}" data-tweet-limit="{{ site.tweets_limit | default: 3 }}" data-dnt="true"  class="twitter-timeline" href="https://twitter.com/{{ site.twitter_ref_src }}">
+    <a data-chrome="{{ site.twitter_feed_setting | default: 'noheader, noscrollbar, nofooter, noborders' }}" data-tweet-limit="{{ site.tweets_limit | default: 3 }}" data-dnt="true" class="twitter-timeline" href="https://twitter.com/{{ site.twitter_ref_src }}">
     </a>
 
-    <center>
-      <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}">Load more tweets</a>
-    </center>
+    <div class="twitter-timeline-load-more">
+      <center>
+        <a class='twitter-timeline-load-more-prompt twitter-timeline-show-more-button customisable' target="_blank" href="https://twitter.com/{{ site.twitter_username }}">Load more tweets</a>
+      </center>
+    </div>
 
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   {%- endif -%}
