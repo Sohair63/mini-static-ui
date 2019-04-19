@@ -217,6 +217,12 @@
   color: $grey-color;
 }
 
+.post-date {
+  font-size: $small-font-size;
+  color: $grey-color;
+  font-style: italic;
+}
+
 .post-link {
   display: block;
   @include relative-font-size(1.5);

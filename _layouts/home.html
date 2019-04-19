@@ -15,11 +15,17 @@ layout: default
       {%- for post in site.posts -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
+          <span class="post-meta">
+            {{ post.short_description }}
+          </span>
+          <div class="clearfix"></div>
+          <span class="post-date">
+            on {{ post.date | date: date_format }}
+          </span>
         </h3>
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
