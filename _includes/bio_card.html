@@ -1,0 +1,18 @@
+<div class="left col-lg-4">
+  <div class="photo-left">
+    <img class="photo" src="{{ site.profile_picture }}"/>
+  </div>
+
+  <h4 class="name">{{ site.title | escape }}</h4>
+  {%- if site.designation -%}
+    <p class="info">{{ site.title | escape }}</p>
+  {%- endif -%}
+
+  {%- if site.email -%}
+    <a class="info u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+  {%- endif -%}
+
+  <p class="desc">{{- site.description | escape -}}</p>
+
+  {%- include social.html -%}
+</div>
