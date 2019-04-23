@@ -17,6 +17,9 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
+  &:hover {
+    text-decoration: none;
+  }
 
   @include media-query($on-palm) {
     padding-right: 45px;
@@ -30,15 +33,15 @@
 
 .site-nav {
   position: absolute;
-  top: 9px;
-  right: $spacing-unit / 2;
+  top: -4px;
+  right: 25px;
   background-color: $background-color;
   border: 1px solid $grey-color-light;
   border-radius: 5px;
   text-align: right;
 
   .nav-trigger {
-      display: none;
+    display: none;
   }
 
   .menu-icon {
@@ -58,7 +61,7 @@
     display: block;
     float: right;
     width: 36px;
-    height: 36px;
+    height: 30px;
     z-index: 2;
     cursor: pointer;
   }
@@ -107,6 +110,9 @@
     .page-link {
       display: inline;
       padding: 0;
+      &:hover {
+        text-decoration: none;
+      }
 
       &:not(:last-child) {
         margin-right: 20px;
@@ -116,76 +122,113 @@
   }
 }
 
-/**
- * Site footer
- */
-.site-footer {
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
-}
 
-.footer-heading {
-  @include relative-font-size(1.125);
-  margin-bottom: 0px;
-}
-
-.contact-list,
 .social-media-list {
   list-style: none;
-  margin-left: 0;
 }
 
-.footer-col-wrapper {
-  @include relative-font-size(0.9375);
-  color: $grey-color;
-  margin-left: -$spacing-unit / 2;
-  @extend %clearfix;
+html,body {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.footer-col {
-  width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-  width:         calc(100% - (#{$spacing-unit} / 2));
-  margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
+.container {
+  // max-width: 1250px;
+  // margin: 30px auto 30px;
+  padding: 0 !important;
+  width: 90%;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.10);
 }
 
-.footer-col-1,
-.footer-col-2 {
-  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-  width:         calc(50% - (#{$spacing-unit} / 2));
+.site-header i {
+  position: relative;
+  cursor: pointer;
+  right: -96%;
+  top: 25px;
+  font-size: 18px !important;
+  color: #fff;
 }
 
-.footer-col-3 {
-  width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-  width:         calc(100% - (#{$spacing-unit} / 2));
-}
-
-@media screen and (min-width: $on-large) {
-  .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+@media (max-width:800px) {
+  .site-header {
+    height: 150px;
   }
-
-  .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-  }
-
-  .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+  .site-header i {
+    right: -90%;
   }
 }
 
-@media screen and (min-width: $on-medium) {
-  .footer-col {
+main {
+  padding: 20px 20px 0px 20px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  margin-top: -120px;
+  border-radius: 100px;
+  border: 4px solid #fff;
+}
+
+.name {
+  margin-top: 20px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 18pt;
+  color: #777;
+}
+
+.info {
+  margin-top: -5px;
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11pt;
+  color: #aaa;
+}
+
+.desc {
+  text-align: center;
+  margin-top: 25px;
+  margin: 25px 40px;
+  color: #999;
+  font-size: 11pt;
+  font-family: "Open Sans";
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ededed;
+}
+
+.social {
+  margin: 5px 0 12px 0;
+  text-align: center;
+  display: inline-block;
+  font-size: 20pt;
+  ul {
     float: left;
+    width: 100%;
+    li {
+      float: left;
+      margin-right: 10px;
+      a {
+        font-size: 16px;
+      }
+    }
   }
 }
-/**
- * Grid helpers
- */
-.one-half {
-  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-  width:         calc(50% - (#{$spacing-unit} / 2));
+
+.right {
+  padding: 0 25px 0 25px !important;
+  border-left:  #e8e8e8 solid 1px;
+}
+
+@media screen and (max-width: 767px) {
+  .right {
+    border-left:  0px;
+  }
 }

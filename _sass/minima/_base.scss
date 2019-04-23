@@ -175,20 +175,22 @@ pre {
 /**
  * Wrapper
  */
-.wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
+.wrap-nav {
+  border-bottom: #e8e8e8 solid 1px;
+  margin-bottom: 12px;
+  // max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+  // max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+  // margin-right: auto;
+  // margin-left: auto;
+  // padding-right: $spacing-unit / 2;
+  // padding-left: $spacing-unit / 2;
   @extend %clearfix;
 
   @media screen and (min-width: $on-large) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    // max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    // max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    // padding-right: $spacing-unit;
+    // padding-left: $spacing-unit;
   }
 }
 
@@ -222,7 +224,7 @@ pre {
   height: 16px;
   display: inline-block;
   fill: currentColor;
-  padding: 5px 3px 2px 5px;
+  // padding: 5px 3px 2px 5px;
   vertical-align: text-bottom;
 }
 

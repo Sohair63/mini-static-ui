@@ -3,3 +3,12 @@
 ---
 
 @import "minima";
+
+.site-header {
+  background: #eee;
+  background-image: url("{{ site.cover_image | default: "assets/default-cover.jpg" | relative_url }}");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+}
