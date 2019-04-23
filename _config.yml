@@ -25,7 +25,7 @@ instagram_username: jekyll
 # - about.md
 
 # Build settings
-theme: mini-static-ui
+theme: minima-bootstrap
 
 plugins:
  - jekyll-feed
