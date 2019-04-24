@@ -98,7 +98,6 @@ In `_config.yml`:
 ```yaml
 twitter_username: yourtwitterhandle
 show_twitter_feed: true
-show_twitter_feed: true
 twitter_feed_setting: 'noheader, noscrollbar, nofooter, noborders'
 tweets_limit: 3 # Any limit default is 3
 twitter_ref_src: yourtwitterhandle?ref_src=TWITTERSOURCE
