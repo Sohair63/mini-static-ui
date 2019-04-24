@@ -2,7 +2,7 @@
 
 A bootstrap based theme for Jekyll. Forked from the [default minima theme](https://github.com/Jekyll/minima)
 
-[Theme preview](TO BE UPLOAD SOON)
+[Theme preview](http://sohairahmad.s3-website-us-east-1.amazonaws.com/)
 
 ## Screenshots
 
