@@ -62,7 +62,7 @@ To run:
 General usage is much as the same as the `minima` theme from which this theme is forked.
 Please see the [minima theme usage guide](https://github.com/jekyll/minima/blob/master/README.md#usage)
 
-Please also see the [example blog](https://github.com/Sohair63/sohair-ahmad-blog) for practical usage examples.
+Please also see the [example site](https://github.com/Sohair63/sohair-ahmad) for practical usage examples.
 
 
 ### Posts
